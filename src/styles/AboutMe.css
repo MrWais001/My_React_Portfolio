@@ -1,0 +1,124 @@
+/* Aboutme page */
+
+/* General container and alignment */
+.container {
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  margin-top: 05%;
+  overflow: hidden;
+  padding: 02% 2%;
+}
+
+.animate-box {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Headings */
+.fh5co-heading h2 {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* About Me List Styling */
+.info {
+  list-style: none;
+  padding: 0;
+}
+
+.info li {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.first-block {
+  font-weight: bold;
+}
+
+.second-block {
+  float: right;
+}
+
+/* Clearfix for floated elements */
+.info:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Paragraph Text */
+.col-md-8 p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Social Icons */
+.fh5co-social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.fh5co-social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.fh5co-social-icons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #333;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+}
+
+.fh5co-social-icons li a:hover {
+  background: #555;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* Responsive Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-4,
+.col-md-8 {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .col-md-4,
+  .col-md-8 {
+    flex-basis: 100%;
+  }
+
+  .first-block,
+  .second-block {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}

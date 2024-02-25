@@ -1,0 +1,81 @@
+#services {
+  /* Light purple background */
+  color: #333; /* Darker text for contrast */
+  padding: 60px 0; /* Top and bottom padding */
+}
+
+/* Title and Subtitle */
+.title-box {
+  margin-bottom: 50px; /* Space below the title */
+}
+
+.title-a,
+.subtitle-a {
+  color: #333; /* Ensuring text is darker for contrast */
+}
+
+.line-mf {
+  width: 60px;
+  height: 2px;
+  background-color: #333; /* Dark line for contrast */
+  margin: 0 auto 20px; /* Centering the line and space below */
+}
+
+/* Services Boxes */
+.service-box {
+  background-color: #f0f0f0; /* Slightly off-white for the box */
+  padding: 30px;
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 30px; /* Space between boxes */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.service-box:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+.service-ico {
+  margin-bottom: 20px; /* Space below the icon */
+}
+
+.ico-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #6f42c1; /* Purple for the icon background */
+  color: #fff; /* Icon color */
+  font-size: 30px; /* Icon size */
+}
+
+/* Title and Description */
+.s-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* Space above the description */
+  color: #333; /* Title color */
+}
+
+.s-description {
+  font-size: 1rem;
+  line-height: 1.6; /* Improved readability */
+  color: #333; /* Description text color for better readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 50%; /* Adjust box width on medium devices */
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 100%; /* Full width boxes on small devices */
+    max-width: 100%;
+  }
+}

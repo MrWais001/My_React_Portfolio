@@ -1,0 +1,160 @@
+/* Skills Section General Styles */
+.ftco-section {
+  /* Light background for the entire section */
+  padding: 60px 0; /* Top and bottom padding */
+}
+
+.container {
+  max-width: 1200px; /* Maximum width of the content */
+  margin: auto; /* Center the content */
+  padding: 0 15px; /* Padding on the sides */
+}
+
+/* Heading Styles */
+.heading-section {
+  margin-bottom: 40px; /* Space below the heading section */
+}
+
+.heading-section h1,
+.heading-section h2 {
+  color: #007bff; /* Primary color for headings */
+  margin: 0; /* Remove default margin */
+}
+
+.heading-section h1.big {
+  font-size: 3rem; /* Large font size for the big heading */
+  font-weight: 700; /* Bold font weight */
+}
+
+.heading-section h2.mb-4 {
+  font-size: 2rem; /* Smaller font size for the subheading */
+  font-weight: 500; /* Medium font weight */
+}
+
+.heading-section p {
+  color: #666; /* Lighter text color for the paragraph */
+}
+
+/* Progress Bar Styles */
+.progress-wrap {
+  margin-bottom: 20px; /* Space between each progress bar */
+}
+
+.progress-wrap h3 {
+  font-size: 1.25rem; /* Font size for the skill name */
+  margin-bottom: 10px; /* Space above the progress bar */
+  color: #333; /* Dark text for readability */
+}
+
+.progress {
+  background-color: #e9ecef; /* Light grey background */
+  border-radius: 20px; /* Rounded corners for the progress bar */
+  height: 30px; /* Height of the progress bar for visibility */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+}
+
+.progress-bar {
+  background-color: #007bff; /* Primary color for the progress fill */
+  border-radius: 20px; /* Rounded corners for the progress fill */
+  color: #fff; /* White text color */
+  font-size: 1rem; /* Font size for the percentage text */
+  line-height: 30px; /* Align the text vertically */
+  text-align: center; /* Center the text */
+}
+
+/* Custom Colors for Different Skills */
+.progress-bar.color-1 {
+  background-color: #6c757d;
+}
+.progress-bar.color-2 {
+  background-color: #28a745;
+}
+.progress-bar.color-3 {
+  background-color: #17a2b8;
+}
+.progress-bar.color-4 {
+  background-color: #ffc107;
+}
+.progress-bar.color-5 {
+  background-color: #dc3545;
+}
+.progress-bar.color-6 {
+  background-color: #f8f9fa;
+  color: #333;
+} /* Adjust text color for light progress bars */
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .col-md-6 {
+    margin-bottom: 20px; /* Ensure spacing is consistent on smaller screens */
+  }
+}
+
+/* Services Boxes */
+.service-box {
+  /* Slightly lighter black for the box */
+  padding: 30px;
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 30px; /* Space between boxes */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+.service-box:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+.service-ico {
+  margin-bottom: 20px; /* Space below the icon */
+}
+
+.ico-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #007bff; /* Bootstrap primary color for the icon background */
+  color: #fff; /* Icon color */
+  font-size: 30px; /* Icon size */
+}
+
+/* Title and Description */
+.s-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* Space above the description */
+  color: #fff; /* Title color */
+}
+
+.s-description {
+  font-size: 1rem;
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-box {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering service boxes on smaller screens */
+  }
+
+  .col-md-4 {
+    flex: 0 0 50%; /* Adjust box width on medium devices */
+    max-width: 50%;
+    display: flex;
+    justify-content: center; /* Ensure items are centered when flexed */
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 100%; /* Full width boxes on small devices */
+    max-width: 100%;
+  }
+}

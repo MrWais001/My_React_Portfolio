@@ -5,76 +5,50 @@
   align-items: center;
   height: 100vh;
   text-align: center;
-  color: black;
 }
 
-.home-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+.home-content h1 {
+  font-size: 3rem;
+  color: #007bff; /* Primary color for your name */
+  margin-bottom: 20px; /* Space between your name and the role */
+  font-weight: bold;
 }
 
-.profile-pic {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-right: 20px;
-  object-fit: cover;
+.animated-role {
+  font-size: 2rem;
+  color: #495057; /* Darker text for the role for contrast */
+  animation: fadeInOut 3s infinite; /* Use fadeInOut animation, looping forever */
 }
 
-.text-content h1,
-.text-content p {
-  margin: 0;
-}
-
-.text-content h1 {
-  font-size: 2.5rem;
-}
-
-.text-content p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-/* Responsive Adjustments for Home Section */
-@media (max-width: 768px) {
-  .home-content {
-    flex-direction: column; /* Stack vertically on smaller screens */
-    text-align: center;
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
   }
-
-  .profile-pic {
-    margin-right: 0;
-    margin-bottom: 20px;
-    width: 120px;
-    height: 120px;
-  }
-
-  .text-content h1 {
-    font-size: 2rem;
-  }
-
-  .text-content p {
-    font-size: 1rem;
+  50% {
+    opacity: 1;
   }
 }
 
-@media (max-width: 480px) {
-  .home-content {
-    padding: 20px;
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
 
-  .profile-pic {
-    width: 100px;
-    height: 100px;
+@keyframes fadeOut {
+  from {
+    opacity: 1;
   }
+  to {
+    opacity: 0;
+  }
+}
 
-  .text-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .text-content p {
-    font-size: 0.9rem;
-  }
+.animated-role {
+  animation: fadeIn 2s ease-in-out;
 }

@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import Service from "./components/Service";
+import Contact from "./components/Contact";
 // Import other components as needed
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <Home />
       <AboutMe />
       <Skills />
+      <Service />
+      <Contact />
       {/* Render other components here */}
     </div>
   );
