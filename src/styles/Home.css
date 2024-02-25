@@ -1,0 +1,80 @@
+/* Home Section Styles */
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: black;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.profile-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.text-content h1,
+.text-content p {
+  margin: 0;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Responsive Adjustments for Home Section */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content {
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .text-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
+}

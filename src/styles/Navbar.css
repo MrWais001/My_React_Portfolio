@@ -1,0 +1,84 @@
+/* src/styles/Navbar.css */
+
+#navbar {
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px;
+  position: fixed; /* Ensures navbar is always at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures navbar is above other content */
+  transition: top 0.3s; /* Smooth transition for showing/hiding */
+}
+
+.logo img {
+  height: 50px; /* Adjust size as needed */
+  border-radius: 50%;
+}
+
+.nav-links,
+.nav-links ul {
+  margin-left: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#navbar ul li {
+  float: left; /* Consider removing if using flexbox */
+}
+
+#navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: purple;
+}
+
+/* Hamburger Menu Style */
+.hamburger {
+  display: none; /* Hidden by default, will be shown on small screens */
+  cursor: pointer; /* Makes it clear it's clickable */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show the hamburger icon on small screens */
+    color: black;
+  }
+
+  .nav-links {
+    display: none; /* Initially hide the dropdown links */
+    position: absolute;
+    right: 0; /* Align dropdown to the right */
+    top: 60px; /* Adjust based on the height of your navbar */
+    background-color: black;
+    width: 100%; /* Full width or adjust as needed */
+    flex-direction: column;
+  }
+
+  /* Ensures links are displayed in a column within the dropdown */
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links ul li {
+    text-align: center; /* Center align the links */
+  }
+
+  #navbar ul li a {
+    padding: 10px; /* Adjust padding for better tap targets on mobile */
+  }
+}
